@@ -1,0 +1,7 @@
+{
+  "name": "RMUTP_Activity",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

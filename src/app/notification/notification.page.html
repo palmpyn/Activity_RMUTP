@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons >
+          <ion-button>
+              <ion-back-button defaultHref="/activity/home"></ion-back-button>
+          </ion-button>
+          <ion-title></ion-title>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+      <ion-item *ngFor="let noti of title" >
+        <ion-thumbnail slot="start">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-thumbnail>
+        <ion-label>{{noti.t}}<br>{{noti.d}}</ion-label> 
+      </ion-item>
+
+</ion-content>

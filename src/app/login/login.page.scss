@@ -1,0 +1,55 @@
+ion-content{
+    --ion-background-color:#F5E3FA;
+ }
+ion-button{
+    --background:#DAB2D3;
+    --ion-text-color:#000000;
+    font-size: 16px;
+  }
+.ion-text-wrap{
+  white-space: nowrap;
+}
+
+.frame{
+  background-color: #DAB2D3;
+  border-radius: 20px;
+  text-align: center;
+}
+.content{
+  margin-top: 8em;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+    .content{
+      margin-top: 18em;
+    }
+  }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  .content{
+    margin-top: 12em;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+  .content{
+    margin-top: 9em;
+  }
+  
+}
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+
+  //CSS
+  .content{
+    margin-top: 0em;
+  }
+  
+}

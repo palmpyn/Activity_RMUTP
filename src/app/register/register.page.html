@@ -1,0 +1,146 @@
+<ion-header>
+
+  <!-- <ion-title>  <h5>ลงทะเบียน</h5></ion-title> -->
+
+</ion-header>
+
+<ion-content class="bg">
+    <ion-row>
+        <ion-col >
+          <ion-row style="align-self: center">  
+    <ion-img src="/assets/logo.png" class="logo"></ion-img>
+    </ion-row>
+        </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="8" offset="1">            
+                  <h5>สมัครสมาชิก</h5>
+            </ion-col>
+            </ion-row>
+  <ion-list >
+      <ion-row>
+          <ion-col size="7" offset="2">
+            <ion-row style="align-self: center">
+              <br>
+              <ion-input type="text" class="frame" placeholder="ชื่อ"></ion-input>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="7" offset="2">
+            <ion-row style="align-self: center">
+              <br>
+              <ion-input type="text" class="frame" placeholder="นามสกุล"></ion-input>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="7" offset="2">
+              <ion-row style="align-self: center">
+                <br>
+                <ion-input type="numeric" class="frame" placeholder="รหัสนักศึกษา"></ion-input>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="7" offset="2">
+              <ion-row style="align-self: center">
+                <br>
+                <ion-input type="numeric" class="frame" placeholder="รหัสบัตรประชาชน"></ion-input>
+              </ion-row>
+            </ion-col>
+          </ion-row>      
+        <ion-row>
+          <ion-col size="7" offset="2">
+              <ion-select placeholder="เพศ" class="frame">
+                <ion-select-option value="f">หญิง</ion-select-option>
+                <ion-select-option value="m">ชาย</ion-select-option>
+                <ion-select-option value="o">ไม่ระบุ</ion-select-option>
+              </ion-select>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="7" offset="2">
+              <ion-row style="align-self: center">
+                  <ion-list>
+                      <ion-col size="3">
+                      <ion-label>คณะ</ion-label>
+                      </ion-col>
+                      <ion-col size="4">
+                      <ion-select interface="popover">
+                        <ion-select-option value="nes">NES</ion-select-option>
+                        <ion-select-option value="n64">Nintendo64</ion-select-option>
+                        <ion-select-option value="ps">PlayStation</ion-select-option>
+                        <ion-select-option value="genesis">Sega Genesis</ion-select-option>
+                        <ion-select-option value="saturn">Sega Saturn</ion-select-option>
+                        <ion-select-option value="snes">SNES</ion-select-option>
+                      </ion-select>
+                      </ion-col>
+                    </ion-list>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="7" offset="2">
+                <ion-row style="align-self: center">
+                    <ion-list>
+                        <ion-label>สาขา</ion-label>
+                        <ion-select interface="popover">
+                          <ion-select-option value="nes">NES</ion-select-option>
+                          <ion-select-option value="n64">Nintendo64</ion-select-option>
+                          <ion-select-option value="ps">PlayStation</ion-select-option>
+                          <ion-select-option value="genesis">Sega Genesis</ion-select-option>
+                          <ion-select-option value="saturn">Sega Saturn</ion-select-option>
+                          <ion-select-option value="snes">SNES</ion-select-option>
+                        </ion-select>
+                      </ion-list>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          <ion-row>
+            <ion-col size="7" offset="2">
+              <ion-row style="align-self: center">
+                  <ion-list>
+                      <ion-label>ชั้นปี</ion-label>
+                      <ion-select interface="popover">
+                        <ion-select-option value="one">1</ion-select-option>
+                        <ion-select-option value="two">2</ion-select-option>
+                        <ion-select-option value="three">3</ion-select-option>
+                        <ion-select-option value="four">4</ion-select-option>
+                      </ion-select>
+                    </ion-list>
+              </ion-row>
+            </ion-col>
+          </ion-row>      
+        <ion-row>
+          <ion-col size="7" offset="2">
+            <ion-row style="align-self: center">
+              <br>
+              <ion-input type="email" class="frame" placeholder="อีเมลล์"></ion-input>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="7" offset="2">
+            <ion-row style="align-self: center">
+              <br>
+              <ion-input type="tel" class="frame" placeholder="เบอร์โทร"></ion-input>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="7" offset="2">
+            <ion-row style="justify-content: flex-end">
+                <ion-button shape="round" class="button" (click)=regis()>ลงทะเบียน</ion-button> 
+            </ion-row>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="7" offset="2">
+            <ion-row style="justify-content: center">
+              <ion-label (click)=login()>เป็นสมาชิกอยู่แล้ว</ion-label> 
+          </ion-row>
+        </ion-col>
+      </ion-row>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons >
+          <ion-button (click)="close()" >
+              <ion-icon  name="close" ></ion-icon>
+          </ion-button>
+          <ion-title>ผลการลงทะเบียน</ion-title>
+        </ion-buttons>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-row>
+        <ion-col size="6">
+          <img src="/assets/shapes.svg" class="imgac">
+        </ion-col>
+        <ion-col size="6">
+          <ion-row class="ion-padding-bottom">
+            <ion-label>ด้าน</ion-label>
+          </ion-row>
+          <ion-row class="ion-padding-bottom">
+            <ion-label>วันที่</ion-label>
+          </ion-row>
+          <ion-row class="ion-padding-bottom">
+            <ion-label>เวลา</ion-label>
+          </ion-row>
+          <ion-row class="ion-padding-bottom">
+            <ion-label>ชั่วโมง</ion-label>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            <ion-label>รายละเอียด</ion-label><br>
+            <ion-textarea readonly rows="4" class="rec">
+              
+            </ion-textarea>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center"><h4><ion-label class="txt">ลงทะเบียนสำเร็จแล้ว</ion-label></h4></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col style="text-align: center"><ion-button class="bgbtn" (click)="home()">ดูหน้ากิจกรรม</ion-button></ion-col>
+        </ion-row>
+      
+</ion-content>

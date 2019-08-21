@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ประวัติการใช้</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment (ionChange)="segmentChanged($event)" style="margin-top: 8px">
+    <ion-segment-button class="cl" checked >
+        <ion-label >ลงทะเบียนไว้</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="cl" >
+      <ion-label >เข้าร่วม</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="cl" >
+      <ion-label >บันทึก</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-card>
+
+    </ion-card>
+</ion-content>
