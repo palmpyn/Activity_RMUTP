@@ -60,5 +60,5 @@ export class QrcodePage implements OnInit {
   })
   .catch((e: any) => console.log('Error is', e));
   }
- 
+
 }

@@ -6,4 +6,9 @@
 
 <ion-content>
   <ion-button (click)="qrcode()">scan</ion-button>
+  <ion-input type="text" [(ngModel)]="encodedData"></ion-input>
+ 
+  <ion-button (click)="qrcode()">
+    Create QR
+  </ion-button>
 </ion-content>
